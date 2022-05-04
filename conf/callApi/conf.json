@@ -1,0 +1,50 @@
+{
+	"permType": "all",
+  "splitChar": " ",
+  "templates": [
+    {
+      "out": "$1",
+      "outArgs": [
+        "ishan"
+      ],
+      "touch": "情话",
+      "url": "https://api.vvhan.com/api/love?type=json"
+    },
+    {
+    	"out": "$1",
+    	"outArgs": [
+    		"data.fanyi"
+    	],
+    	"touch": "翻译",
+    	"url": "https://api.vvhan.com/api/fy?text=$1"
+    },
+    {
+    	"out": "$1:$2\n<Pic:$3>\n",
+    	"outArgs": [
+    		"name",
+    		"content",
+    		"img"
+    	],
+    	"touch": "百度",
+    	"url": "https://api.iyk0.com/bk/?msg=$1"
+    },
+    {
+    	"out": "<Audio:$1>",
+      	"outArgs": [
+        	"mp3"
+      	],
+      	"touch": "AI",
+      	"url": "http://api.weijieyue.cn/api/xiaoai/api.php?msg=$1"
+    },
+    {
+    	"out": "$1\n$2\n$3\n",
+      	"outArgs": [
+        	"name",
+        	"time",
+        	"data"
+      	],
+      	"touch": "新闻",
+      	"url": "https://api.vvhan.com/api/60s?type=json"
+    }
+  ]
+}

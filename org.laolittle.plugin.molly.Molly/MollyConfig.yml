@@ -1,0 +1,40 @@
+# 在此填入你的Api-Key
+api_key: 8719pfxqt3m87qdr
+# 在此填入你的Api-Secret
+api_secret: x7czl27d
+# 你的机器人昵称
+name: 小狼崽
+# 群聊呼叫机器人后持续回复的次数，默认为0
+replyTimes: 0
+# 是否引用回复
+doQuoteReply: false
+# 控制台显示服务器返回的数据
+doPrintResultsOnConsole: false
+# 私聊不触发聊天关键字
+# 主要是防止私聊进行功能调用的时候触发此聊天
+# 消息中包含就不回复
+# 支持正则
+dontReply: 
+  - '/'
+# 机器人被呼叫但是消息没有任何内容的回应
+defaultReply: 
+  - ？
+  - 怎么
+  - 怎么了
+  - 什么？
+  - 在
+  - 嗯？
+# 机器人被呼叫，消息没有任何内容且发送人一直没有说话的回应
+timeoutReply: 
+  - 没事我就溜了
+  - emmmmm
+  - ......
+  - 溜了
+  - ？
+# 是否开启私聊
+enablePrivateChatReply: true
+# 万金油回复模式设定
+# DEFAULT: 使用茉莉云官方的万金油
+# LOCAL: 使用本地的万金油
+# OFF: 不开启万金油回复
+unknownReplyBehavior: DEFAULT
